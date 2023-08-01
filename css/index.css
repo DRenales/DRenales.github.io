@@ -1,0 +1,14 @@
+#background, .bg-image {
+    background-image: url("../images/Backgrounds/bg-index.jpg");
+
+    height: 100%;
+    width: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer, .navbar{
+    border: 1px solid black;
+}

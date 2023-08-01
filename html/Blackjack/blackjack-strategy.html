@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Blackjack - Strategies</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link href="../../css/blackjack.css" rel="stylesheet">
+
+    <!-- Javascript -->
+    <script src="../../js/blackjack.js"></script>
+
+</head>
+
+<!-- NAVIGATION MENU -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">CLK!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <!-- Blackjack Navigation-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Blackjack
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="blackjack-main.html">How To Play</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Strategies</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="blackjack-practice.html">Practice</a></li>
+                    </ul>
+                </li>
+
+                <!-- Poker Navigation-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Poker
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../Poker/poker-main.html">How To Play</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../Poker/poker-strategy.html">Strategies</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../Poker/poker-practice.html">Practice</a></li>
+                    </ul>
+                </li>
+
+                <!-- Texas Hold 'Em Navigation-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Texas Hold 'Em
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../Texas Hold 'Em/texas-main.html">How To Play</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../Texas Hold 'Em/texas-strategy.html">Strategies</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../Texas Hold 'Em/texas-practice.html">Practice</a></li>
+                    </ul>
+                </li>
+
+                <!-- Solitaire Navigation-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Solitaire
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../Solitaire/solitaire-main.html">How To Play</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../Solitaire/solitaire-strategy.html">Strategies</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../Solitaire/solitaire-practice.html">Practice</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+
+    <div id="background" class="bg-image shadow-2-strong">
+        <div class="mask">
+
+            <div class="container d-flex align-items-center justify-content-center text-center h-100">
+                <div class="text-white">
+                    <h1 class="mb-4">BASIC TIPS</h1>
+                    <ul id="override-left">
+                        <li>Avoid unwanted pressure from the table by not sitting in the leftmost seat.</li>
+                        <li>Always assume the dealer's face-down card is a 10 and use that to see where you stand.</li>
+                        <li>Your only goal is to beat the dealer's hand.</li>
+                    </ul>
+                </div>  
+            </div>
+
+            <div class="container d-flex align-items-center justify-content-center text-center h-100">
+                <div class="text-white">
+                    <h1 class="mb-4">INTERMEDIATE TIPS/STRATEGIES</h1>
+                    <ul id="override-left">
+                        <li>Many sites provide insight into the many strategies you can use in certain scenarios. You can also refer to the many cheatsheet tables available such as this one by Technopedia:</li>
+                    </ul>
+                </div>
+            </div>
+                
+            <div class="container d-flex align-items-center justify-content-center text-center h-100">
+                <img src="../../images/cheat-sheet.png" alt="Cheat Sheet" style="width:70%">
+            </div>
+
+            <div class="container d-flex align-items-center justify-content-center text-center h-100">
+                <div class="text-white">
+                    <h1 class="mb-4">COUNTING CARDS</h1>
+                    <p id="override-left">
+                        A way you can increase your odds of winning is through counting cards. Keeping tabs on
+                        insight to how to play your hand. Counting is done by assigning cards a value.
+                    </p>
+                    <ul id="override-left">
+                        <li>-|+ 1 for 10, J, Q, K, A</li>
+                        <li>    0 for 7, 8, 9</li>
+                        <li>+|- 1 for 2, 3, 4, 5, 6</li>
+                    </ul>
+                    <p id="override-left">
+                        Whether you assign a positive value or a negative value to the 10-value cards does not 
+                        matter as long as the low natural value cards are the opposite. Just be consistent.
+                        The true deck of the value (TV) will then be the "Running Count (RC)" which is the current 
+                        count of all played hands divided by the number of decks (D) in play. To reiterate, TV = RC / D.
+                        In most cases, casino tables will play with more than one deck, the general amount is 
+                        six decks in play. The running count should also always be reset to 0 upon shuffle.
+                        Visit the practice tool to do some basic practice on this strategy!
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<footer class="bg-light text-lg-start">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 07/24/2023 Copyright: Dominic Renales
+    </div>
+</footer>
+
+</html>

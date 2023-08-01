@@ -1,0 +1,75 @@
+footer, .navbar{
+    border: 1px solid black;
+}
+
+.mask {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#background, .bg-image {
+    background-image: url("../images/Backgrounds/bg-blackjack.jpg");
+
+    background-position: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#interactive {
+    display: block;
+    margin: 10px 10px;
+}
+
+#interactive input {
+    width: 100px;
+    height: 100px;
+    font-size:large;
+    text-align: center;
+}
+
+#interactive button {
+    width: 100px;
+    height: 100px;
+}
+
+#dealer img, #players img {
+    height: 100px; 
+    width: 75px;
+    margin: 10px 10px;
+}
+
+[id^="ordered-"], [id^="unordered-"], p {
+    text-align: left;
+}
+
+[id^="card-image-"] { 
+    height: 100px; 
+    width: 75px;
+    margin: 10px 10px;
+}
+
+@media screen and (min-width:750px) {
+    [id^="card-image-"] { 
+        height: 150px; 
+        width: 112.5px;
+        margin: 10px 10px;
+    }
+
+    #dealer img, #players img {
+        height: 150px; 
+        width: 112.5px;
+        margin: 10px 10px;
+    }
+
+    #interactive input {
+        width: 150px;
+        height: 150px;
+        font-size:x-large;
+        text-align: center;
+    }
+    
+    #interactive button {
+        width: 150px;
+        height: 150px;
+    }
+}

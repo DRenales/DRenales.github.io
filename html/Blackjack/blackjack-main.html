@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link href="../../css/blackjack.css" rel="stylesheet">
+
+    <!-- Javascript -->
+    <script src="../../js/blackjack.js"></script>
+
+    <title>Blackjack - How To Play</title>
+
+</head>
+
+<!-- NAVIGATION MENU -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">CLK!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <!-- Blackjack Navigation-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Blackjack
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">How To Play</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="blackjack-strategy.html">Strategies</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="blackjack-practice.html">Practice</a></li>
+                    </ul>
+                </li>
+
+                <!-- Poker Navigation-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Poker
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../Poker/poker-main.html">How To Play</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../Poker/poker-strategy.html">Strategies</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../Poker/poker-practice.html">Practice</a></li>
+                    </ul>
+                </li>
+
+                <!-- Texas Hold 'Em Navigation-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Texas Hold 'Em
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../Texas Hold 'Em/texas-main.html">How To Play</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../Texas Hold 'Em/texas-strategy.html">Strategies</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../Texas Hold 'Em/texas-practice.html">Practice</a></li>
+                    </ul>
+                </li>
+
+                <!-- Solitaire Navigation-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Solitaire
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../Solitaire/solitaire-main.html">How To Play</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../Solitaire/solitaire-strategy.html">Strategies</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../Solitaire/solitaire-practice.html">Practice</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<body>
+    <div id="background" class="bg-image shadow-2-strong">
+        <div class="mask">
+            <div class="container d-flex align-items-center justify-content-center text-center h-100">
+                <div class="text-white">
+                    <h1 class="mb-4">CARD VALUES</h1>
+                    <table>
+                        <tr>
+                            <td><img id="card-image-natural" src=""> </td>
+                            <td>
+                                <p>Natural Cards - Any card with a number on it will have the same value
+                                    as the number printed.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img id="card-image-face" src=""></td>
+                            <td>
+                                <p>Face Cards - All face cards (J, Q, K) will have a value of 10.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img id="card-image-ace" src=""></td>
+                            <td>
+                                <p>Aces - The ace has a soft value of 1 or 11. The value of the card
+                                    will be whichever value is larger that does not lead to the player busting (over
+                                    21).</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="container d-flex align-items-center justify-content-center text-center h-100">
+                <div class="text-white">
+                    <h1 class="mb-4">GOAL OF THE GAME</h1>
+                    <ol id="ordered-gotg">
+                        <li>Get as close to having a total card value of 21 without going over.</li>
+                        <li>Beat the dealer.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="container d-flex align-items-center justify-content-center text-center h-100">
+                <div class="text-white">
+                    <h1 class="mb-4">WHAT CAN YOU DO?</h1>
+                    <ul id="unordered-wcyd">
+                        <li>Hit - In other words, you can ask for another card. At a table, this could be signaled by
+                            tapping twice on the table with two fingers.</li>
+                        <li>Double Down - A riskier play than hitting, this requires you to double your bet on your
+                            hand. You only receive one extra card for that hand.</li>
+                        <li>Split - Should you have two cards with the same value, you can double your bet and split
+                            your current hand into two playable hands.</li>
+                        <li>Stay - Hold on to the card total you have. At a table, this can be signaled with a wave of
+                            your hand parallel to the table.</li>
+                        <li>Surrender - You may forfeit your hand to receive half of you bet back.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container d-flex align-items-center justify-content-center text-center h-100">
+                <div class="text-white">
+                    <h1 class="mb-4">FLOW OF THE GAME</h1>
+                    <ol id="ordered-fotg">
+                        <li>The dealer will deal out one face-up card out to each player twice in a clockwise rotation.
+                            On the first run, the dealer will deal themselves a face-up card. On the second, they will
+                            deal themselves a face-down card.</li>
+                        <li>If a player is showing a natural 21, or blackjack, that player will generally be awarded
+                            1.5x their original bet. However, this can be stopped if the dealer also has blackjack.</li>
+                        <li>In the event the dealer's face-up card is an ace, they may ask the table if they would like
+                            to wager half of their current bet to buy insurance. If the dealer has a natural 21, or
+                            blackjack, all players who bought insurance will receive their bet back. Otherwise, each
+                            player that bought insurance loses their insurance bet and the hand continues.</li>
+                        <li>Following the clockwise rotation, each player will play their hand. Any player that has a
+                            total card value over 21 busts and is no longer a player in the hand.</li>
+                        <li>When the table has played, the dealer will reveal their face-down card. As long as the
+                            dealer is under 17 (verify with your table whether the dealer stops at soft 17+), the dealer
+                            must take a card.</li>
+                        <li>The dealer will pay all players that have beaten the dealer's hand their winnings at the end
+                            of the hand.</li>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<footer class="bg-light text-lg-start">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 07/24/2023 Copyright: Dominic Renales
+    </div>
+</footer>
+
+</html>
