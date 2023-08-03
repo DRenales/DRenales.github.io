@@ -103,7 +103,8 @@ function loadDealer() {
         "<img src=\"../../images/Cards/BACK.png\">" +
         "<img src=\"../../images/Cards/" + card +".png\">";
 
-    runningCount += calculateRunning(card.split("-")[0]);    
+    runningCount1 += calculateRunning(card.split("-")[0])[0];
+    runningCount2 += calculateRunning(card.split("-")[0])[1];    
 }
 
 function loadPlayers() {
