@@ -129,7 +129,8 @@ function calculateRunning(card) {
     switch(card) {
         case '2': case '3': case '4': case '5': case '6':  return [1,-1];
         case 'A': case 'J': case 'Q': case 'K': case "10": return [-1,1];
-        default:                                           return [0, 0]; 
+        case '7': case '8': case '9':                      return [0,0];
+        default:                                           return [0,0]; 
     }
 }
 
