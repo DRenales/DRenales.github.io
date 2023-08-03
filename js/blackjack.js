@@ -105,6 +105,9 @@ function loadDealer() {
 
     runningCount1 += calculateRunning(card.split("-")[0])[0];
     runningCount2 += calculateRunning(card.split("-")[0])[1];    
+    
+    console.log("Starting with " + runningCount1);
+    console.log("Starting with " + runningCount2);
 }
 
 function loadPlayers() {
@@ -123,15 +126,15 @@ function loadPlayers() {
         runningCount1 += calculateRunning(card1.split("-")[0])[0];
         runningCount2 += calculateRunning(card2.split("-")[0])[1];
 
-        console.log(card1 + "gets" + runningCount1);
-        console.log(card2 + "gets" + runningCount2);
+        console.log("After " + card1 + " has " + runningCount1);
+        console.log("After " + card2 + " has " + runningCount2);
     }
 }
 
 function calculateRunning(card) {
     switch(card) {
-        case '2': case '3': case '4': case '5': case '6':  return [1,-1];
-        case 'A': case 'J': case 'Q': case 'K': case "10": return [-1,1];
+        case '2': case '3': case '4': case '5': case '6':  return [1,(-1)];
+        case 'A': case 'J': case 'Q': case 'K': case "10": return [(-1),1];
         case '7': case '8': case '9':                      return [0,0];
         default:                                           return [0,0]; 
     }
