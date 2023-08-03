@@ -124,8 +124,8 @@ function loadPlayers() {
         "<img src=\"../../images/Cards/" + card2 +".png\">";
 
         runningCount1 += calculateRunning(card1.split("-")[0])[0];
-        runningCount1 += calculateRunning(card1.split("-")[0])[1];
-        runningCount2 += calculateRunning(card2.split("-")[0])[0];
+        runningCount2 += calculateRunning(card1.split("-")[0])[1];
+        runningCount1 += calculateRunning(card2.split("-")[0])[0];
         runningCount2 += calculateRunning(card2.split("-")[0])[1];
 
         console.log("After " + card1 + " has " + runningCount1);
