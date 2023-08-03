@@ -70,7 +70,8 @@ function initPractice() {
     loadDealer();
     loadPlayers();
 
-    console.log(runningCount);
+    console.log(runningCount1);
+    console.log(runningCount2);
 }
 
 function buildDeck() {
@@ -108,7 +109,7 @@ function loadDealer() {
 function loadPlayers() {
 
     let hands = Math.floor((Math.random() * 7) + 1);
-    console.log(hands);
+    console.log("There are: " + hands + " in play.");
     document.getElementById("players").innerHTML = "<h1>CARDS ON THE TABLE</h1><br>";
 
     for(let i = 0; i < hands; i++) {
