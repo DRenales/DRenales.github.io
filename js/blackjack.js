@@ -122,6 +122,9 @@ function loadPlayers() {
 
         runningCount1 += calculateRunning(card1.split("-")[0])[0];
         runningCount2 += calculateRunning(card2.split("-")[0])[1];
+
+        console.log(card1 + "gets" + runningCount1);
+        console.log(card2 + "gets" + runningCount2);
     }
 }
 
