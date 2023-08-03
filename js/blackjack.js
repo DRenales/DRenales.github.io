@@ -128,8 +128,8 @@ function loadPlayers() {
         runningCount1 += calculateRunning(card2.split("-")[0])[0];
         runningCount2 += calculateRunning(card2.split("-")[0])[1];
 
-        console.log("After " + card1 + " has " + runningCount1);
-        console.log("After " + card2 + " has " + runningCount2);
+        console.log("After " + card1 + " RC1 has " + runningCount1);
+        console.log("After " + card2 + " RC2 has " + runningCount2);
     }
 }
 
