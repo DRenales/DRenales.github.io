@@ -129,7 +129,7 @@ function calculateRunning(card) {
     switch(card) {
         case '2': case '3': case '4': case '5': case '6':  return [1,-1];
         case 'A': case 'J': case 'Q': case 'K': case "10": return [-1,1];
-        default:                                           return 0; 
+        default:                                           return [0, 0]; 
     }
 }
 
@@ -138,10 +138,10 @@ function checkCount(form) {
 
     let guess = form.RC.value;
 
-    if (guess.trim() == "") { alert("No value input!"); }
+         if(guess.trim() == "")                               { alert("No value input!"); }
     else if(guess == runningCount1 || guess == runningCount2) { alert("Correct!"); initPractice(); } 
-    else if (guess != runningCount1 && guess != runningCount2) { alert("That is not the true deck value! Try Again!"); }
-    else if (isNaN(guessalert)) { alert("Invalid Input"); }
+    else if(guess != runningCount1 && guess != runningCount2) { alert("That is not the true deck value! Try Again!"); }
+    else if(isNaN(guess))                                     { alert("Invalid Input"); }
 }
 
 /* FUNCTIONS SHARED ACROSS ALL PAGES */
