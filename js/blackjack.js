@@ -5,7 +5,8 @@ const face = ["J", "Q", "K"];
 const values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 
 /* VARIABLES */
-let runningCount = 0;
+let runningCount1 = 0;
+let runningCount2 = 0;
 
 
 
@@ -61,7 +62,8 @@ function setCardImages() {
 function initPractice() {
     event.preventDefault();
 
-    runningCount = 0;
+    runningCount1 = 0;
+    runningCount2 = 0;
 
     buildDeck();
     shuffleDeck();
@@ -116,16 +118,16 @@ function loadPlayers() {
         "<img src=\"../../images/Cards/" + card1 +".png\">" +
         "<img src=\"../../images/Cards/" + card2 +".png\">";
 
-        runningCount += calculateRunning(card1.split("-")[0]);
-        runningCount += calculateRunning(card2.split("-")[0]);
+        runningCount1 += calculateRunning(card1.split("-")[0])[0];
+        runningCount2 += calculateRunning(card2.split("-")[0])[1];
     }
 }
 
 function calculateRunning(card) {
     switch(card) {
-        case '2': case '3': case '4': case '5': case '6':  return  1;
-        case 'A': case 'J': case 'Q': case 'K': case "10": return -1;
-        default:                                           return  0; 
+        case '2': case '3': case '4': case '5': case '6':  return [1,-1];
+        case 'A': case 'J': case 'Q': case 'K': case "10": return [-1,1];
+        default:                                           return 0; 
     }
 }
 
@@ -135,8 +137,8 @@ function checkCount(form) {
     let guess = form.RC.value;
 
     if (guess.trim() == "") { alert("No value input!"); }
-    else if(guess == runningCount) { alert("Correct!"); initPractice(); } 
-    else if (guess != runningCount) { alert("That is not the true deck value! Try Again!"); }
+    else if(guess == runningCount1 || guess == runningCount2) { alert("Correct!"); initPractice(); } 
+    else if (guess != runningCount && guess != runningCount2) { alert("That is not the true deck value! Try Again!"); }
     else if (isNaN(guessalert)) { alert("Invalid Input"); }
 }
 
