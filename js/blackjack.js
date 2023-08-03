@@ -140,7 +140,7 @@ function checkCount(form) {
 
     if (guess.trim() == "") { alert("No value input!"); }
     else if(guess == runningCount1 || guess == runningCount2) { alert("Correct!"); initPractice(); } 
-    else if (guess != runningCount && guess != runningCount2) { alert("That is not the true deck value! Try Again!"); }
+    else if (guess != runningCount1 && guess != runningCount2) { alert("That is not the true deck value! Try Again!"); }
     else if (isNaN(guessalert)) { alert("Invalid Input"); }
 }
 
